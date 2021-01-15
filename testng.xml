@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTestEL" parallel="classes" thread-count="4">
+    <test name="All tests">
+        <classes>
+            <class name="testSuites.TestShop">
+                <methods>
+                    <include name="openProductCategory"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
